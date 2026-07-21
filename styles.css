@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+}
+
+.grid-box{
+    height: 3px;
+    width: 3px;
+    background-color: aquamarine;
+}
+
+.col{
+    /* margin: 2px; */
+}

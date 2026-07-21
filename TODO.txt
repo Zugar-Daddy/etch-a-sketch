@@ -1,0 +1,11 @@
+1) Add Colors {
+    Have like 10 basic color palette below the canvas
+    Look if u can have that entire color select widget thingy
+}
+
+2) Figure Out Brush Size {
+    I reckon to change brush size you'll have to change the size of your grid. Maybe have the grid in 1 pixel blocks 
+    and have the mouse have a definite radius and that invisible radius affects the pixels it covers
+
+    note: Not really necessary to do now. Figure out colors and basic layout of the page ppl will encounter
+}

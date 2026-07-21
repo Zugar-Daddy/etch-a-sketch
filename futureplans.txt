@@ -1,0 +1,2 @@
+make simple etch-a-sketch
+maybe add a multiplayer feature, who can draw a prompt the best. kinda scribble clone
