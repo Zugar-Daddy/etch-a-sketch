@@ -2,12 +2,16 @@
     display: flex;
 }
 
+.grid-box-container{
+    display: flex;
+}
+
 .grid-box{
-    height: 3px;
-    width: 3px;
+    height: 8px;
+    width: 8px;
     background-color: aquamarine;
 }
 
-.col{
-    /* margin: 2px; */
+.color-palette{
+    
 }

@@ -1,6 +1,14 @@
 const container = document.querySelector(".container");
 
-createGrid(200);
+// The bubbling thing catches this
+let mouseDown = false;
+document.body.onmousedown = () => {mouseDown = true; console.log("UPPPPP");}
+document.body.onmouseup = () => {mouseDown = false;console.log("DOWNN");}
+
+// Current Color
+
+
+createGrid(100);
 
 function createGrid(gridSize){
 
@@ -16,8 +24,7 @@ function createGrid(gridSize){
             const sq = document.createElement("div");
             sq.classList.add("grid-box");
 
-            sq.addEventListener('mouseenter', (event) => sq.style.background = 'black');
-
+            sq.addEventListener('mouseover', changeColor);
 
             col.appendChild(sq);
 
@@ -28,4 +35,9 @@ function createGrid(gridSize){
 
 }
 
+// event object is passed
+function changeColor(e){
+    if(e.type == 'mouseover' && !mouseDown) return;
 
+    e.target.style.background = 'black';
+}
